@@ -1,0 +1,23 @@
+{
+  "name": "starwarsapi",
+  "version": "1.0.0",
+  "description": "Basic webpage displaying items from the Star Wars API (https://swapi.dev/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apatino16/starWarsAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apatino16/starWarsAPI/issues"
+  },
+  "homepage": "https://github.com/apatino16/starWarsAPI#readme",
+  "devDependencies": {
+    "eslint": "^8.33.0"
+  }
+}
