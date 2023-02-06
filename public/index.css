@@ -73,10 +73,14 @@ main form h4 {
 button{
 	background: none;
 	cursor:pointer;
+	padding: 20px;
+}
+
+#yodaButton {
+	text-align: center;
 }
 
 form button img{
-	width: 200px;
 	height: 300px;
 }
 
