@@ -2,7 +2,7 @@
 
 <html lang="en-US">
   <head>
-    <meta charset="uft-8" />
+    <meta charset="utf-8" />
     <meta name="author" content="Anny Patino" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Wars</title>
@@ -13,10 +13,12 @@
       href="/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js" type="module" defer></script>
   </head>
 
   <body>
     <div id="page-container">
+      <!------ HEADER ------>
       <header>
         <h1>
           <a href="index.html"><strong>Star Wars</strong></a>
@@ -37,12 +39,13 @@
       </header>
 
       <div id="content-wrap">
+        <!------ MAIN ------>
         <main>
           <section>
-            <form action="get">
+            <form>
               <h4>What Star Wars character are you today?</h4>
               <div id="yodaButton">
-                <button type="submit">
+                <button type="submit" id="submit">
                   <img src="/images/yoda.png" />
                 </button>
               </div>
@@ -53,6 +56,7 @@
         </main>
       </div>
 
+      <!------ Footer------>
       <footer>
         <h3>Project By Anny Patino</h3>
       </footer>
