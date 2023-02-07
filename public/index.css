@@ -74,6 +74,7 @@ button{
 	background: none;
 	cursor:pointer;
 	padding: 20px;
+	border: none;
 }
 
 #yodaButton {
@@ -85,18 +86,26 @@ form button img{
 }
 
 #responseField {
-	min-width: 191px;
+	min-width: 100px;
   	min-height: 120px;
-  	background-color: #1f233e;
-  	margin: auto;
-  	margin-top: 25px;
-  	font-weight: 400;
-  	font-size: 14px;
-  	letter-spacing: 0.2px;
+  	background-color: none;
   	text-align: center;
-  	color: white;
 	padding: 20px;
+	margin: 25px;
 }
+
+#responseField text{
+	color:white;
+    background: none;
+    padding:1.6rem 1rem 1.8rem 1rem;
+	border-radius: 100%;
+    border:1px solid rgb(134, 108, 108);
+    font-size:1.8rem;
+	font-weight: 400;
+    line-height:1em;
+    letter-spacing:0.075em;
+   }
+	
 
 main form h5 {
 	color: white;

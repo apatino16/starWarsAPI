@@ -17,10 +17,9 @@ const getCharacter = async ( ) => {
       const response = await fetch(`${swapi}people/${ranNum}/`);
         if(response.ok){
           const jsonResponse = await response.json( );
-          return jsonResponse
+          // responseField.innerHTML = `<text>${JSON.stringify(jsonResponse)}</text>`;
+          responseField.innerHTML = `<text> ${jsonResponse.name}</text>`;
         }
-        throw new Error('Request failed!');
-  
       } catch(error) {
         console.log(error);
      }
@@ -29,3 +28,5 @@ const getCharacter = async ( ) => {
     }
 
 submit.addEventListener('click', getCharacter());
+
+
