@@ -89,29 +89,38 @@ form button img{
 	min-width: 100px;
   	min-height: 120px;
   	background-color: none;
-  	text-align: center;
 	padding: 20px;
 	margin: 25px;
-}
-
-#responseField text{
 	color:white;
     background: none;
     padding:1.6rem 1rem 1.8rem 1rem;
-	border-radius: 100%;
     border:1px solid rgb(134, 108, 108);
-    font-size:1.8rem;
+	text-align: center;
+}
+
+#responseField text{
+	font-size:1.8rem;
 	font-weight: 400;
     line-height:1em;
     letter-spacing:0.075em;
-   }
-	
-
-main form h5 {
-	color: white;
-	text-align: center;
-	font-size: medium;
 }
+
+#responseField p{
+	font-weight: 600;
+	color: rgb(134, 108, 108);
+}
+
+main form h5{
+	text-align: center;
+}
+
+main form h5 a{
+	color: white;
+	font-size: medium;
+	cursor: pointer;
+	text-decoration: none;
+}
+
 
 footer{
 	position: fixed;
@@ -128,4 +137,8 @@ footer h3{
 	text-align: center;
 	color: white;
 	
+}
+
+#film1 {
+	color: white;
 }

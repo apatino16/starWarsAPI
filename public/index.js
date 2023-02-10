@@ -11,14 +11,23 @@ const responseField = document.querySelector('#responseField')
 let ranNum = Math.floor(Math.random() * (83 - 1 + 1) + 1);
 
 
-// Fetch Characters from SWAPI
+// Fetch Characters Name from SWAPI
 const getCharacter = async ( ) => {
     try{
       const response = await fetch(`${swapi}people/${ranNum}/`);
         if(response.ok){
           const jsonResponse = await response.json( );
-          // responseField.innerHTML = `<text>${JSON.stringify(jsonResponse)}</text>`;
-          responseField.innerHTML = `<text> ${jsonResponse.name}</text>`;
+          responseField.innerHTML = 
+          `<text> <strong> ${jsonResponse.name} </strong></text>
+          <p>Fun facts about you: </p>
+          <p>Height: ${jsonResponse.height}cm</p>
+          <p>Mass: ${jsonResponse.mass}kg</p>
+          <p>Hair color: ${jsonResponse.hair_color}</p>
+          <p>Skin color: ${jsonResponse.skin_color}</p>
+          <p>Eye color: ${jsonResponse.eye_color}</p>
+          <p>Birth year: ${jsonResponse.birth_year}</p>
+          <p>Gender: ${jsonResponse.gender}</p`;
+          console.log(jsonResponse)
         }
       } catch(error) {
         console.log(error);
@@ -30,3 +39,25 @@ const getCharacter = async ( ) => {
 submit.addEventListener('click', getCharacter());
 
 
+// Fetch Films from SWAPI
+const film1 = document.querySelector('#film1')
+const getFilm = async ( ) => {
+    try{
+      const response = await fetch(`${swapi}films/1/`);
+        if(response.ok){
+          const jsonResponse = await response.json( );
+          film1.innerHTML = 
+          ` <text> ${jsonResponse.title}</text>
+          <p> ${jsonResponse.release_date}</p>
+          <p> ${jsonResponse.director}</p>
+          <p> ${jsonResponse.producer}</p>
+          <p> ${jsonResponse.characters}</p>`;
+           
+          console.log(jsonResponse)
+        }
+      } catch(error) {
+        console.log(error);
+     }
+    }
+
+    getFilm();
