@@ -85,6 +85,24 @@ form button img{
 	height: 300px;
 }
 
+tool-tip {
+	color: white;
+	position: absolute;
+	z-index: 1;
+	pointer-events: none;
+	user-select: none;
+	box-shadow: 0 0 10px red;
+	padding: .5rem 1rem;
+	font-size: 0.8rem;
+	border-radius: 8px;
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+:has(> tool-tip):hover tool-tip {
+	opacity: 1;
+}
+
 #responseField {
 	min-width: 100px;
   	min-height: 120px;
