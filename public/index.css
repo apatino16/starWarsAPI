@@ -157,6 +157,41 @@ footer h3{
 	
 }
 
+#starWarFilms,
+#starWarFilms::before,
+#starWarFilms::after {
+  box-sizing: border-box;
+} 
+
+
+#filmsTimeline h2 {
+	color: white;
+}
+
+#films {
+	display: flex;
+	padding: 8px 18px;
+}
+
+
+.film {
+	padding: 10px;
+    cursor: pointer;
+}
+
+.poster {
+    margin-bottom: 6px;
+    border-radius: 4px;
+}
+
+#filmTitle1 {
+	padding: 100px;
+}
+.active {
+	opacity: 0;
+  }
+
+
 #film1 {
 	color: white;
 }
