@@ -7,6 +7,7 @@ body {
 	min-height: 100vh;
 }
 
+/* Header Styling*/
 header {
 	position: fixed;
 	width: 100%;
@@ -37,6 +38,7 @@ header h1{
     margin-inline-end: 0px;
 }
 
+/* Navigation bar Styling*/
 nav {	
 	text-align: center;
 }
@@ -59,6 +61,7 @@ nav ul li a {
 	text-decoration: none;
 }
 
+/*Home page Styling */
 #content-wrap {
 	padding-bottom: 3rem;
 	padding-top: 12rem;
@@ -139,7 +142,7 @@ main form h5 a{
 	text-decoration: none;
 }
 
-
+/* Footer Styling */
 footer{
 	position: fixed;
 	width: 100%;
@@ -154,9 +157,9 @@ footer{
 footer h3{
 	text-align: center;
 	color: white;
-	
 }
 
+/* Film Page Styling*/
 #starWarFilms,
 #starWarFilms::before,
 #starWarFilms::after {
@@ -183,24 +186,4 @@ footer h3{
 .poster {
     margin-bottom: 6px;
     border-radius: 4px;
-}
-
-.charactersSubtitle {
-	color: white;
-}
-
-#previousCharacters {
-	color: white;
-	border: 10px;
-	border-color: red;
-}
-
-#nextCharacters {
-	color: white; 
-	border: 10px;
-	border-color: blue;
-}
-
-#content {
-	color: white;
 }
