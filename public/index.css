@@ -185,7 +185,22 @@ footer h3{
     border-radius: 4px;
 }
 
+.charactersSubtitle {
+	color: white;
+}
 
-.active {
-	opacity: 0;
-  }
+#previousCharacters {
+	color: white;
+	border: 10px;
+	border-color: red;
+}
+
+#nextCharacters {
+	color: white; 
+	border: 10px;
+	border-color: blue;
+}
+
+#content {
+	color: white;
+}
