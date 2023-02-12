@@ -37,32 +37,3 @@ async function getCharacter() {
 }
 
 submit.addEventListener('click', getCharacter());
-
-
-
-// FILMS PAGE
-
-// Fetch Films from SWAPI
-
-const filmTitle1 = document.querySelector('#filmTitle1');
-
-async function getFilm() {
-  try {
-    const filmNumber = await fetch(`${swapi}films`);
-    if (filmNumber.ok) {
-      const filmResponse = await filmNumber.json();
-      console.log(filmResponse);
-      console.log(filmResponse.results[0].title);
-      filmTitle1.innerHTML = `<text>${filmResponse.results[0].title}</text>`;
-    console.log(filmResponse.results[0].title);
-    }
-  } catch (error) {
-    console.log(error);
-  }
-
-}
-
-getFilm();
-
-
-

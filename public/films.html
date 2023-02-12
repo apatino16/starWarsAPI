@@ -12,7 +12,7 @@
       href="/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js" type="module"></script>
+    <script src="films.js" type="module"></script>
   </head>
 
   <body id="starWarFilms">
@@ -42,28 +42,8 @@
         <main id="filmsTimeline">
           <h2>Star Wars Films</h2>
           <section id="films">
-            <section id="film1">
-              <script>
-                const swapi = 'https://swapi.dev/api/';
-                const filmTitle1 = document.querySelector('#filmTitle1');
-
-                async function getFilm() {
-                  try {
-                    const filmNumber = await fetch(`${swapi}films`);
-                    if (filmNumber.ok) {
-                      const filmResponse = await filmNumber.json();
-                      console.log(filmResponse);
-                      console.log(filmResponse.results[0].title);
-                      filmTitle1.textContent = `<text>${filmResponse.results[0].title}</text>`;
-                    }
-                  } catch (error) {
-                    console.log(error);
-                  }
-                }
-
-                getFilm();
-              </script>
-              <button id="1">
+            <section class="film">
+              <div>
                 <img
                   src="https://lumiere-a.akamaihd.net/v1/images/EP4_POS_2_D-RESIZED_f977074a.jpeg"
                   alt="A New Hope"
@@ -71,8 +51,8 @@
                   height="634.66"
                   class="poster"
                 />
-                <div id="filmTitle1"></div>
-              </button>
+              </div>
+              <div id="filmInfo1"></div>
             </section>
 
             <section class="film">
@@ -85,7 +65,7 @@
                   class="poster"
                 />
               </div>
-              <div id="film2"></div>
+              <div id="filmInfo2"></div>
             </section>
 
             <section class="film">
@@ -98,8 +78,9 @@
                   class="poster"
                 />
               </div>
-              <div id="film3"></div>
+              <div id="filmInfo3"></div>
             </section>
+
             <section class="film">
               <div>
                 <img
@@ -110,8 +91,9 @@
                   class="poster"
                 />
               </div>
-              <div id="film4"></div>
+              <div id="filmInfo4"></div>
             </section>
+
             <section class="film">
               <div>
                 <img
@@ -122,8 +104,9 @@
                   class="poster"
                 />
               </div>
-              <div id="film5"></div>
+              <div id="filmInfo5"></div>
             </section>
+
             <section class="film">
               <div>
                 <img
@@ -134,7 +117,7 @@
                   class="poster"
                 />
               </div>
-              <div id="film6"></div>
+              <div id="filmInfo6"></div>
             </section>
           </section>
         </main>
