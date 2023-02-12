@@ -3,7 +3,7 @@
 Basic webpage displaying items from the Star Wars API (https://swapi.dev/)
 
 ## Scripts
-Build
+Build application using Parcel
 
 ```
 npm run build
