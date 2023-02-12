@@ -2,8 +2,14 @@
   "name": "starwarsapi",
   "version": "1.0.0",
   "description": "Basic webpage displaying items from the Star Wars API (https://swapi.dev/)",
-  "main": "index.js",
+  "source": [
+    "public/index.html",
+    "public/films.html"
+  ],
+  "private": true,
   "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +24,7 @@
   },
   "homepage": "https://github.com/apatino16/starWarsAPI#readme",
   "devDependencies": {
-    "eslint": "^8.33.0"
+    "eslint": "^8.33.0",
+    "parcel": "^2.8.3"
   }
 }
